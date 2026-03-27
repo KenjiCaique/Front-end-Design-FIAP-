@@ -1,0 +1,35 @@
+/* variaveis CSS - nome VÁLIDO - deve começar com -- - deve ser declarado no :root  */
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-Grey-700: hsl(0, 0%, 20%);
+    --color-Grey-800: hsl(0, 0%, 12%);
+    --color-Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--color-Grey-900);
+}
+
+.container {
+    background-color: var(--color-Grey-800);
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container img {
+    border-radius: 50%;
+    border: 3px, solid, var(--color-white);
+    transition: .5s;
+}
+
+.container:hover img {
+    border-color: var(--color-green);
+    scale: 1.1;
+}
+
+.container h2 {
+    color: var(--color-green);
+}
