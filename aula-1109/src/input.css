@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+    --color-clementine-50: #fff9ed;
+    --color-clementine-100: #fff2d5;
+    --color-clementine-200: #ffe1a9;
+    --color-clementine-300: #feca73;
+    --color-clementine-400: #fda93a;
+    --color-clementine-500: #fb8e14;
+    --color-clementine-600: #e66f0a;
+    --color-clementine-700: #c3560b;
+    --color-clementine-800: #9b4411;
+    --color-clementine-900: #7d3911;
+    --color-clementine-950: #431b07;
+}
