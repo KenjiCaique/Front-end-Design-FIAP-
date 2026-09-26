@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="font-body bg-slate-950 text-white p-8">
+
+    <main class="w-full max-w-7xl mx-auto min-h-dvh bg-white/5
+    border border-white/10 rounded-3xl p-4">
+
+        <header class="flex flex-col items-center gap-4 
+    lg:flex-row lg:justify-between">
+            <h1 class="font-title text-4xl font-bold">Space Travel</h1>
+
+            <figure class="flex gap-4">
+                <img src="./images/astro01.jpg" alt="Astronauta 01" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro02.jpg" alt="Astronauta 02" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro03.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro04.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro05.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro06.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+
+            </figure>
+
+
+        </header>
+
+        <!-- Formulario -->
+        <!--action="alguem que sab egar os dados d form-->
+        <form id="formViagem" name="formViagem" method="get" 
+        action="" class="mb-10 mt-5"> 
+            
+            <p class="mb-5 font-medium text-cyan-300 text-center text-balance
+            lg:text-left">  
+                Preencha os dados abaixo para confirmar sua viagem espacial
+            </p>
+
+            <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl">
+                <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+                    01. Dados do viajante
+                </legend>
+                <div class="">
+
+                    <!-- Nome -->
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome" minlength="10"
+                        maxlength="15" required>
+                    </div>
+
+                    <button type="submit">Reservar Viagem</button>
+                </div>
+            </fieldset>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
