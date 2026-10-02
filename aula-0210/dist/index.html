@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="font-body bg-slate-950 text-white p-8">
+
+    <main class="w-full max-w-7xl mx-auto min-h-dvh bg-white/5
+    border border-white/10 rounded-3xl p-4">
+
+    <header class="flex flex-col items-center gap-4 
+    lg:flex-row lg:justify-between">
+        <h1 class="font-title text-4xl font-bold">Space Travel</h1>
+
+        <figure class="flex gap-4">
+            <img src="./images/astro01.jpg" alt="Astronauta 01" 
+            class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+            <img src="./images/astro02.jpg" alt="Astronauta 02" 
+            class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+            <img src="./images/astro03.jpg" alt="Astronauta 03" 
+            class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+            <img src="./images/astro04.jpg" alt="Astronauta 03" 
+            class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+            <img src="./images/astro05.jpg" alt="Astronauta 03" 
+            class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">           
+            <img src="./images/astro06.jpg" alt="Astronauta 03" 
+            class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">          
+        </figure>
+    </header>
+
+    <!-- formulário -->
+     <form id="formViagem" name="formViagem" method="get" 
+     action="" class="mb-10 mt-5">
+
+     <p class="mb-5 font-medium text-cyan-300 text-center text-balance
+     lg:text-left">
+        Preencha os dados abaixo para confirmar sua viagem espacial 
+     </p>
+
+    <!-- primeira seção -->
+    <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl">
+            <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+                01. Dados do viajante
+            </legend>
+            <section class="grid gap-4 md:grid-cols-2">
+                
+                <!-- Nome -->
+                <div>
+                    <label for="nome"
+                    class="block ml-2 my-1 text-sm text-slate-300">
+                        Nome Completo
+                    </label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Digite seu nome" minlength="10" maxlength="15" required
+                    class="border w-full border-white/10
+                    bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                    focus:bg-white/10">
+                </div>
+
+                <!-- Codigo -->
+                <div>
+                    <label for="codigo" class="block ml-2 my-1 text-sm text-slate-300">
+                        Codigo de Acesso
+                    </label>
+                    <input type="password" id="codigo" name="codigo" placeholder="Digite seu código" minlength="10" maxlength="15" required 
+                    class="border w-full border-white/10
+                    bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                    focus:bg-white/10">
+                </div>
+
+                <!-- Data da viagem-->
+                <div>
+                    <label for="Data" class="block ml-2 my-1 text-sm text-slate-300">
+                        Data da Viagem
+                    </label>
+                    <input type="date" id="Data" name="Data"
+                    required class="border w-full border-white/10
+                    bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                    focus:bg-white/10">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block ml-2 my-1 text-sm text-slate-300">
+                        E-mail
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-mail" maxlength="15" required 
+                    class="border w-full border-white/10
+                    bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                    focus:bg-white/10">
+                </div>
+
+            </section>
+    </fieldset>
+
+    <!-- Segunda seção -->
+    <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl my-8">
+        <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+            02. Detalhes da viagem
+        </legend>
+        <section class="grid gap-4 md:grid-cols-2">
+    
+            <!-- Destino -->
+            <div>
+                <label for="destino" class="block ml-2 my-1 text-sm text-slate-300">
+                    Destino
+                </label>
+                <select name="destino" id="destino" required
+                class="w-full border border-white/10 bg-slate-950 
+                rounded-lg px-4 py-3 outline-none focus:border-cyan-400">
+                    <option value="0" disabled selected>Selecione um destino</option>
+                    <option value="Lua">Lua</option>
+                    <option value="Marte">Marte</option>
+                    <option value="Orion">Orion</option>
+                    <option value="Titan">Titan</option>
+                </select>
+            </div>
+    
+            <!-- Codigo -->
+            <div>
+                <label for="codigo" class="block ml-2 my-1 text-sm text-slate-300">
+                    Codigo de Acesso
+                </label>
+                <input type="password" id="codigo" name="codigo" placeholder="Digite seu código" minlength="10"
+                    maxlength="15" required class="border w-full border-white/10
+                        bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                        focus:bg-white/10">
+            </div>
+    
+            <!-- Data da viagem-->
+            <div>
+                <label for="Data" class="block ml-2 my-1 text-sm text-slate-300">
+                    Data da Viagem
+                </label>
+                <input type="date" id="Data" name="Data" required class="border w-full border-white/10
+                        bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                        focus:bg-white/10">
+            </div>
+    
+            <!-- Email -->
+            <div>
+                <label for="email" class="block ml-2 my-1 text-sm text-slate-300">
+                    E-mail
+                </label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail" maxlength="15" required class="border w-full border-white/10
+                        bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                        focus:bg-white/10">
+            </div>
+    
+        </section>
+    </fieldset>
+
+
+
+     </form>
+
+    </main>
+    
+
+</body>
+</html>
