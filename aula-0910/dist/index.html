@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="font-body bg-slate-950 text-white p-8">
+
+    <main class="w-full max-w-7xl mx-auto min-h-dvh bg-white/5
+    border border-white/10 rounded-3xl p-4">
+
+        <header class="flex flex-col items-center gap-4 
+    lg:flex-row lg:justify-between">
+            <h1 class="font-title text-4xl font-bold">Space Travel</h1>
+
+            <figure class="flex gap-4">
+                <img src="./images/astro01.jpg" alt="Astronauta 01" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro02.jpg" alt="Astronauta 02" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro03.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro04.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro05.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+                <img src="./images/astro06.jpg" alt="Astronauta 03" class="size-10 rounded-full cursor-pointer hover:animate-spin 
+            hover:border-rose-600 duration-1000 transition 
+            border-2 border-cyan-600 object-cover">
+            </figure>
+        </header>
+
+        <!-- formulário -->
+        <form id="formViagem" name="formViagem" method="get" action="" class="mb-10 mt-5">
+
+            <p class="mb-5 font-medium text-cyan-300 text-center text-balance
+     lg:text-left">
+                Preencha os dados abaixo para confirmar sua viagem espacial
+            </p>
+            <!-- 1a. seção do formulário -->
+            <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl">
+                <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+                    01. Dados do viajante
+                </legend>
+                <section class="grid gap-4 md:grid-cols-2">
+
+                    <!-- Nome -->
+                    <div>
+                        <label for="nome" class="block ml-2 my-1 text-sm text-slate-300">
+                            Nome Completo
+                        </label>
+                        <input type="text" id="nome" name="nome" value="Digite seu nome" minlength="10" maxlength="15"
+                            required class="border w-full border-white/10 bg-slate-950/60
+                    px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                    focus:bg-white/10">
+                    </div>
+
+                    <!-- Código -->
+                    <div>
+                        <label for="codigo" class="block ml-2 my-1 text-sm text-slate-300">
+                            Código de Acesso
+                        </label>
+                        <input type="password" id="codigo" name="codigo" placeholder="Digite seu código" minlength="10"
+                            maxlength="15" required class="border w-full
+                     border-white/10 bg-slate-950/60
+                                    px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                    focus:bg-white/10">
+                    </div>
+
+                    <!-- Data -->
+                    <div>
+                        <label for="codigo" class="block ml-2 my-1 text-sm text-slate-300">
+                            Data da Viagem
+                        </label>
+                        <input type="date" id="codigo" name="codigo" required class="border w-full
+                                     border-white/10 bg-slate-950/60
+                                                  px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                                    focus:bg-white/10">
+                    </div>
+
+                    <!-- e-mail -->
+                    <div>
+                        <label for="email" class="block ml-2 my-1 text-sm text-slate-300">
+                            E-mail
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="15"
+                            required class="border w-full border-white/10 bg-slate-950/60
+                                    px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                    focus:bg-white/10">
+                    </div>
+
+                </section>
+            </fieldset>
+
+            <!-- 2a. seção do formulário -->
+            <fieldset class="border-2 border-white/10 bg-white/5 p-4 
+            rounded-2xl my-8">
+                <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+                    02. Detalhes da viagem
+                </legend>
+                <section class="grid gap-4 md:grid-cols-2">
+                    <!-- Destino -->
+                    <div>
+                        <label for="destino" class="block ml-2 my-1 text-sm text-slate-300">
+                            Destino
+                        </label>
+                        <select name="destino" id="destino" required class="w-full border border-white/10 bg-slate-950
+                        rounded-lg px-4 py-3 outline-none focus:border-cyan-400
+                        ">
+                            <option value="0" disabled selected>Selecione um destino</option>
+                            <option value="Lua">Lua</option>
+                            <option value="Marte">Marte</option>
+                            <option value="Orion">Orion</option>
+                            <option value="Titan">Titan</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Datalist -->
+                    <div>
+                        <label for="nave" class="block ml-2 my-1 text-sm text-slate-300">
+                            Nave preferida
+                        </label>
+                        <input type="text" id="nave" name="nave" placeholder="Digite ou selecione sua nave"
+                            maxlength="15" required class="border w-full
+                        border-white/10 bg-slate-950/60
+                        px-4 py-3 rounded-lg outline-none 
+                        focus:border-cyan-400   focus:bg-white/10" list="listaNaves">
+
+                        <datalist id="listaNaves">
+                            <option value="Millenium"></option>
+                            <option value="Orion X1"></option>
+                            <option value="Galatica"></option>
+                            <option value="Star Voyage"></option>
+                            <option value="Onix 2000"></option>
+                            <option value="Cosmos"></option>
+                            <option value="Maverick 1970"></option>
+                        </datalist>
+                    </div>
+                </section>
+
+                <!-- grid com 3 colunas para o botão radio -->
+
+                <!-- Classe da viagem - radio -->
+                <section>
+                    <p class="block ml-2 mt-2 mb-1 text-sm text-slate-300">
+                        Classe da viagem
+                    </p>
+
+                    <div class="my-2 grid gap-4 md:grid-cols-3">
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="radio" name="classeViagem" value="economica" class="size-4 accent-cyan-400">
+                            <span>Econômica</span>
+                        </label>
+
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="radio" name="classeViagem" value="executiva" class="size-4 accent-cyan-400">
+                            <span>Executiva</span>
+                        </label>
+
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="radio" name="classeViagem" value="luxo" class="size-4 accent-cyan-400" checked>
+                            <span>Luxo</span>
+                        </label>
+                    </div>
+                </section>
+                <!-- Checkbox  -->
+                <section>
+                    <p class="block ml-2 mt-4 text-sm text-slate-300">
+                        Serviços adicionais
+                    </p>
+                
+                    <div class="my-2 grid gap-4 md:grid-cols-2">
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="Hotel espacial" class="size-4 accent-cyan-400">
+                            <span>Hotel espacial</span>
+                        </label>
+                
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="Passeio lunar" class="size-4 accent-cyan-400">
+                            <span>Passeio lunar</span>
+                        </label>
+                
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="Guia espacial" class="size-4 accent-cyan-400">
+                            <span>Guia espacial</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer gap-3
+                        bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="Seguro interplanetário" class="size-4 accent-cyan-400">
+                            <span>Seguro interplanetário</span>
+                        </label>
+                    </div>
+                </section>
+
+            </fieldset>
+
+
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
